@@ -1,3 +1,8 @@
+// While adding elements of vector in map, we then and there only update values of the keys.
+// We cover all possibilities like while inserting a new number 'a' we check if 'a-1' and 'a+1' already exist and 
+// thus proceed ahead with updating values of the upStreak and downStreak
+// We have covered 2 conditions in one by using bool x and y. Though this is suboptimal, lesser the ifs better the performance
+
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
